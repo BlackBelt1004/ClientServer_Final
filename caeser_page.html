@@ -1,0 +1,31 @@
+<!doctype html>
+<head> 
+    <meta charset="utf-8">
+    <h1>Caesar Cipher</h1>
+    <link href="caeser_format.css" rel ="stylesheet"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="cipher_Home.html">Home</a></li>
+                <li><a href="caeser_page.html">Caeser converter</a></li>
+                <li><a href="atbash_page.html">Atbash converter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form>
+        <label>Plaintext:</label>
+        <input id = "userInput" type = "text" placeholder = "Secret Code">
+        <label>Shift:</label>
+        <input type = 'number' name = 'shift' value = '5' min = '1' max = '26'>
+    <input type = 'submit' value='Encrypt'>
+    </form>
+    <h2>Encrypted Message</h2>
+    <div id='output'>
+    </div>
+ 
+</body>
+<script src = 'cipher_ceaser.js'></script>
+<script src = 'secret.js'></script>
+</html>
